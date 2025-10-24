@@ -908,40 +908,13 @@ const Footer = () => (
 
 // Fixed Profile Picture Component
 const FixedProfilePicture = () => {
-  const [profileImage, setProfileImage] = useState('/api/placeholder/80/80');
+  const [profileImage, setProfileImage] = useState('https://via.placeholder.com/128x128/3B82F6/FFFFFF?text=R');
   const [imageLoading, setImageLoading] = useState(true);
 
   useEffect(() => {
-    // Your actual LinkedIn profile picture URL
-    const possibleUrls = [
-      `https://media.licdn.com/dms/image/v2/D4E35AQELk1KhBtqpOA/profile-framedphoto-shrink_200_200/B4EZn.xfxkIIAY-/0/1760916012507?e=1761523200&v=beta&t=vmOai2i52jwIj0HwNiJg7Q4FKXJ4lVrH_QaD6X3ZU4w`,
-      `https://media.licdn.com/dms/image/v2/D4E35AQELk1KhBtqpOA/profile-framedphoto-shrink_400_400/B4EZn.xfxkIIAY-/0/1760916012507?e=1761523200&v=beta&t=vmOai2i52jwIj0HwNiJg7Q4FKXJ4lVrH_QaD6X3ZU4w`,
-      `https://media.licdn.com/dms/image/v2/D4E35AQELk1KhBtqpOA/profile-framedphoto-shrink_100_100/B4EZn.xfxkIIAY-/0/1760916012507?e=1761523200&v=beta&t=vmOai2i52jwIj0HwNiJg7Q4FKXJ4lVrH_QaD6X3ZU4w`
-    ];
-    
-    const tryLoadImage = (urls: string[], index = 0) => {
-      if (index >= urls.length) {
-        setProfileImage('https://via.placeholder.com/80x80/3B82F6/FFFFFF?text=L');
-        setImageLoading(false);
-        return;
-      }
-      
-      // Use fetch to test if image URL is valid
-      fetch(urls[index], { method: 'HEAD' })
-        .then(response => {
-          if (response.ok) {
-            setProfileImage(urls[index]);
-            setImageLoading(false);
-          } else {
-            tryLoadImage(urls, index + 1);
-          }
-        })
-        .catch(() => {
-          tryLoadImage(urls, index + 1);
-        });
-    };
-    
-    tryLoadImage(possibleUrls);
+    // Use placeholder image for now
+    setProfileImage('https://via.placeholder.com/128x128/3B82F6/FFFFFF?text=R');
+    setImageLoading(false);
   }, []);
 
   return (
