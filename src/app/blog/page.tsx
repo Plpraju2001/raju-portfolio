@@ -8,7 +8,7 @@ const blogPosts = [
     id: 1,
     title: 'My Python Learning Journey: From Zero to Data Structures',
     excerpt: 'Reflecting on my first week diving deep into Python fundamentals. From setting up environments to mastering lists and loops - here\'s what I learned and the challenges I faced along the way.',
-    date: 'December 20, 2024',
+    date: 'October 24, 2024',
     readTime: '6 min read',
     category: 'Learning Journey',
     content: `
@@ -65,7 +65,7 @@ const blogPosts = [
     id: 2,
     title: 'Advanced Causal Inference: Beyond Traditional A/B Testing',
     excerpt: 'Deep dive into sophisticated causal inference methods I\'m exploring to solve complex business problems. Sharing insights from my latest research on uplift modeling and heterogeneous treatment effects.',
-    date: 'December 15, 2024',
+    date: 'October 15, 2024',
     readTime: '12 min read',
     category: 'Advanced Analytics',
     content: `
@@ -116,7 +116,7 @@ const blogPosts = [
     id: 3,
     title: 'Data Science Tips & Tricks: Pro Techniques from the Field',
     excerpt: 'Essential tips and tricks I\'ve learned from years of data science practice. From debugging models to optimizing performance, these insights will save you hours and improve your results.',
-    date: 'December 10, 2024',
+    date: 'October 10, 2024',
     readTime: '8 min read',
     category: 'Tips & Tricks',
     content: `

@@ -639,7 +639,7 @@ const Blog = () => (
                 </div>
                 <div>
                   <h3 className="text-lg font-bold">Latest Deep Dive</h3>
-                  <p className="text-sm text-white/80">Published Today</p>
+                  <p className="text-sm text-white/80">Published October 24, 2024</p>
                 </div>
               </div>
               <div className="bg-white/20 px-2 py-1 rounded-full text-xs font-semibold">
