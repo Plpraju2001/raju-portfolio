@@ -919,13 +919,13 @@ const FixedProfilePicture = () => {
 
   return (
     <div className="fixed top-24 right-4 z-50 block">
-      <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-gray-200/50 w-40">
+      <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-gray-200/50 w-44">
         <Image
           src="https://media.licdn.com/dms/image/v2/D4E35AQELk1KhBtqpOA/profile-framedphoto-shrink_200_200/B4EZn.xfxkIIAY-/0/1760916012507?e=1761955200&v=beta&t=U3UZSG5FONMwF53Yybfm5T5sUsPh7If-ZIlJD42BJek"
           alt="Lakshmipathiraju Pericharla"
-          width={96}
-          height={96}
-          className="w-24 h-24 rounded-full object-cover border-4 border-blue-600"
+            width={120}
+            height={120}
+            className="w-30 h-30 rounded-full object-cover border-4 border-blue-600"
           onError={(e) => {
             // Fallback to initials if image fails to load
             e.currentTarget.style.display = 'none';
@@ -935,8 +935,8 @@ const FixedProfilePicture = () => {
             }
           }}
         />
-        <div className="w-24 h-24 rounded-full bg-blue-500 flex items-center justify-center border-4 border-blue-600 hidden">
-          <span className="text-white font-bold text-lg">LP</span>
+        <div className="w-30 h-30 rounded-full bg-blue-500 flex items-center justify-center border-4 border-blue-600 hidden">
+          <span className="text-white font-bold text-xl">LP</span>
         </div>
         
         {/* Navigation Menu */}
