@@ -312,7 +312,10 @@ const Projects = () => {
         name: 'raju-portfolio',
         description: 'Professional portfolio website showcasing data science projects and skills',
         language: 'TypeScript',
+        stargazers_count: 0,
+        forks_count: 0,
         html_url: 'https://github.com/Plpraju2001/raju-portfolio',
+        homepage: null,
         private: true,
         updated_at: new Date().toISOString()
       }
@@ -636,7 +639,7 @@ const Blog = () => (
                 </div>
                 <div>
                   <h3 className="text-lg font-bold">Latest Deep Dive</h3>
-                  <p className="text-sm text-white/80">Published Yesterday</p>
+                  <p className="text-sm text-white/80">Published Today</p>
                 </div>
               </div>
               <div className="bg-white/20 px-2 py-1 rounded-full text-xs font-semibold">
@@ -644,9 +647,9 @@ const Blog = () => (
               </div>
             </div>
             
-            <h4 className="text-lg font-bold mb-2">&quot;Data Science Tips & Tricks: Pro Techniques from the Field&quot;</h4>
+            <h4 className="text-lg font-bold mb-2">&quot;My Python Learning Journey: From Zero to Data Structures&quot;</h4>
             <p className="text-white/90 mb-4 text-sm leading-relaxed">
-              Essential tips and tricks I&apos;ve learned from years of data science practice. From debugging models to optimizing performance, these insights will save you hours and improve your results...
+              Reflecting on my first week diving deep into Python fundamentals. From setting up environments to mastering lists and loops - here&apos;s what I learned and the challenges I faced along the way...
             </p>
             
             <div className="flex items-center justify-between">
@@ -655,7 +658,7 @@ const Blog = () => (
                   <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
-                  8 min read
+                  6 min read
                 </span>
                 <span className="flex items-center">
                   <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">

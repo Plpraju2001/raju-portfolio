@@ -6,6 +6,63 @@ import Link from 'next/link';
 const blogPosts = [
   {
     id: 1,
+    title: 'My Python Learning Journey: From Zero to Data Structures',
+    excerpt: 'Reflecting on my first week diving deep into Python fundamentals. From setting up environments to mastering lists and loops - here\'s what I learned and the challenges I faced along the way.',
+    date: 'December 20, 2024',
+    readTime: '6 min read',
+    category: 'Learning Journey',
+    content: `
+      <h2>Starting Fresh with Python</h2>
+      <p>This week marked the beginning of my structured Python learning journey, and honestly, I wasn't sure what to expect. Coming from a data science background, I've used Python before, but I realized I was missing some fundamental concepts. Module 01 was exactly what I needed to fill those gaps.</p>
+      
+      <h2>Session 01: Environment Setup and Basics</h2>
+      <p>The first session was all about getting comfortable with Python environments. I've used Anaconda before, but I never really understood why it was so popular. This time, I took a different approach and really paid attention to what each tool does.</p>
+      
+      <p><strong>Google Colab became my best friend.</strong> I know it sounds basic, but being able to write and execute code directly in my browser without worrying about local installations was a game-changer. The interface is clean, and the shortcuts like Shift + Enter for running cells made everything feel smooth.</p>
+      
+      <p>What really clicked for me was understanding variables and data types properly. I used to just assign values without thinking about what Python was doing behind the scenes. Learning about the <code>type()</code> function was eye-opening - it's such a simple tool, but it helps you understand exactly what you're working with.</p>
+      
+      <h2>Session 02: Lists and Loops - The Real Game Changer</h2>
+      <p>This is where things got interesting. I've worked with lists before, but I never really appreciated their power until this session. The concept of storing multiple items of different types in one structure? That's when I realized why Python is so flexible.</p>
+      
+      <p><strong>The for loop revelation:</strong> I've written for loops countless times, but understanding how they work with lists on a fundamental level changed everything. It's not just about iterating - it's about processing data systematically. When I wrote my first loop to go through a list of mixed data types, I felt like I finally "got" Python's philosophy.</p>
+      
+      <p>Built-in functions like <code>len()</code>, <code>sum()</code>, <code>max()</code>, and <code>min()</code> - these seem trivial, but they're incredibly powerful. I used to write custom functions for things that Python already handles beautifully. Learning about indexing and slicing was another "aha" moment. Being able to extract specific portions of data with simple syntax is something I'll use constantly.</p>
+      
+      <h2>Session 03: Advanced List Operations and Decision Making</h2>
+      <p>This session was where I started feeling confident. Slicing with step sizes, reversing lists, and using methods like <code>append()</code>, <code>insert()</code>, and <code>pop()</code> - these are the building blocks of data manipulation.</p>
+      
+      <p><strong>f-strings changed my life.</strong> Okay, that's dramatic, but seriously, formatting output with f-strings is so much cleaner than what I was doing before. Being able to combine variables and text seamlessly makes debugging and displaying results so much easier.</p>
+      
+      <p>The <code>range()</code> function was another revelation. I've used it in loops, but understanding how it generates sequences of numbers opened up new possibilities. Combined with <code>list()</code>, I can create number sequences quickly, which is incredibly useful for data analysis.</p>
+      
+      <p><strong>Conditional statements were the perfect capstone.</strong> Learning about <code>if</code>, <code>elif</code>, and <code>else</code> statements felt like I was finally learning to make programs that could think. Writing a simple program to check if a number is even or odd might seem basic, but it represents the foundation of decision-making in programming.</p>
+      
+      <h2>What Surprised Me</h2>
+      <p>I was surprised by how much I didn't know about Python basics. Coming from a data science background, I thought I had a good grasp of Python, but these sessions revealed gaps in my understanding that I didn't even know existed.</p>
+      
+      <p>The <code>input()</code> function was something I'd never used properly. Understanding how it reads user input as strings by default and how to convert it to integers with <code>int()</code> was crucial. It's these small details that make the difference between writing code that works and writing code that works well.</p>
+      
+      <h2>Challenges I Faced</h2>
+      <p>One challenge was getting comfortable with Python's syntax. Coming from other languages, the indentation-based structure took some getting used to. But once I understood that indentation isn't just formatting - it's part of the language structure - everything clicked.</p>
+      
+      <p>Another challenge was remembering all the built-in functions and methods. There are so many! But I learned that it's not about memorizing everything - it's about understanding the patterns and knowing where to look when you need something specific.</p>
+      
+      <h2>How This Connects to My Data Science Work</h2>
+      <p>Even though these are basic concepts, I can already see how they'll improve my data science work. Understanding lists properly means I can manipulate data more efficiently. Mastering loops means I can process datasets more systematically. And getting comfortable with conditional statements means I can write more robust data processing scripts.</p>
+      
+      <p>These fundamentals are the building blocks of everything I do in data science. Whether I'm cleaning data, performing analysis, or building models, I'll be using these concepts constantly.</p>
+      
+      <h2>What's Next</h2>
+      <p>I'm excited to continue this learning journey. These three sessions gave me a solid foundation, and I can already see how the next modules will build on these concepts. The systematic approach to learning Python is exactly what I needed.</p>
+      
+      <p>If you're starting your Python journey or looking to strengthen your fundamentals, I highly recommend taking a structured approach like this. Sometimes going back to basics is the best way to move forward.</p>
+      
+      <p><em>What Python concepts have you found most challenging or rewarding to learn? I'd love to hear about your experiences!</em></p>
+    `
+  },
+  {
+    id: 2,
     title: 'Advanced Causal Inference: Beyond Traditional A/B Testing',
     excerpt: 'Deep dive into sophisticated causal inference methods I\'m exploring to solve complex business problems. Sharing insights from my latest research on uplift modeling and heterogeneous treatment effects.',
     date: 'December 15, 2024',
@@ -56,7 +113,7 @@ const blogPosts = [
     `
   },
   {
-    id: 2,
+    id: 3,
     title: 'Data Science Tips & Tricks: Pro Techniques from the Field',
     excerpt: 'Essential tips and tricks I\'ve learned from years of data science practice. From debugging models to optimizing performance, these insights will save you hours and improve your results.',
     date: 'December 10, 2024',
