@@ -908,33 +908,35 @@ const Footer = () => (
 
 // Fixed Profile Picture Component
 const FixedProfilePicture = () => {
-  const [profileImage, setProfileImage] = useState('https://via.placeholder.com/128x128/3B82F6/FFFFFF?text=R');
+  const [profileImage, setProfileImage] = useState('https://via.placeholder.com/128x128/3B82F6/FFFFFF?text=LP');
   const [imageLoading, setImageLoading] = useState(true);
 
   useEffect(() => {
     // Use placeholder image for now
-    setProfileImage('https://via.placeholder.com/128x128/3B82F6/FFFFFF?text=R');
+    setProfileImage('https://via.placeholder.com/128x128/3B82F6/FFFFFF?text=LP');
     setImageLoading(false);
   }, []);
 
   return (
-    <div className="fixed top-24 right-6 z-50 hidden lg:block">
-      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-gray-200/50">
-        {imageLoading ? (
-          <div className="w-32 h-32 rounded-full bg-gray-200 animate-pulse flex items-center justify-center">
-            <div className="w-16 h-16 bg-gray-300 rounded-full"></div>
-          </div>
-        ) : (
-          <Image
-            src={profileImage}
-            alt="Lakshmipathiraju Pericharla"
-            width={128}
-            height={128}
-            className="w-32 h-32 rounded-full object-cover border-4 border-blue-500"
-          />
-        )}
-        <div className="mt-3 text-center">
-          <h3 className="text-sm font-semibold text-gray-800 tracking-tight">Raju P</h3>
+    <div className="fixed top-24 right-4 z-50 block">
+      <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-gray-200/50 w-40">
+        <Image
+          src="https://media.licdn.com/dms/image/v2/D4E35AQELk1KhBtqpOA/profile-framedphoto-shrink_200_200/B4EZn.xfxkIIAY-/0/1760916012507?e=1761955200&v=beta&t=U3UZSG5FONMwF53Yybfm5T5sUsPh7If-ZIlJD42BJek"
+          alt="Lakshmipathiraju Pericharla"
+          width={96}
+          height={96}
+          className="w-24 h-24 rounded-full object-cover border-4 border-blue-600"
+          onError={(e) => {
+            // Fallback to initials if image fails to load
+            e.currentTarget.style.display = 'none';
+            const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+            if (fallback) {
+              fallback.style.display = 'flex';
+            }
+          }}
+        />
+        <div className="w-24 h-24 rounded-full bg-blue-500 flex items-center justify-center border-4 border-blue-600 hidden">
+          <span className="text-white font-bold text-lg">LP</span>
         </div>
         
         {/* Navigation Menu */}
